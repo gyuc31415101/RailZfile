@@ -6,5 +6,4 @@ RUN wget https://c.jun6.net/ZFILE/zfile-release.war
 RUN unzip zfile-release.war && rm -rf zfile-release.war
 RUN chmod +x /bin/*.sh
 EXPOSE 8080
-RUN cat /bin/start.sh"
 CMD ["./bin/start.sh"]
